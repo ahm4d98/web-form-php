@@ -1,0 +1,91 @@
+<html>
+<head>
+<title>Student Registration Form</title>
+<style>
+  
+body{
+    background-color :rgb(129, 129, 212);
+              width: 600px;
+                border: 10px solid red;
+                padding: 100px;
+                position: absolute;
+                left: 22%;
+    
+    
+    }
+    h3{
+        background-color: aliceblue;
+        border:3px;
+        
+    }
+    
+</style>
+</head>
+
+<body> <center>
+<h3>STUDENT REGISTRATION FORM</h3> </center>
+
+ 
+ 
+<form   action="php form.php"  method="POST">
+    <fieldset>
+       <legend>PERSONAL INFO OF STUDENT</legend>  
+    
+      
+       <p>FIRSTNAME <br> <input type="text"  name="Firstname" value="Ahmed" minlength="2" maxlength="30" /> </p> 
+        <label for="lname">LAST NAME:</label><br>
+        <input type="text" id='lname' name="last-name" value="Hatem" minlength="2" maxlength="30" /><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id='email' name="email1" value="your_email@,,,,.com" ><br>
+        <label for="city">city:</label><br>
+        <input type="text"  id='city' name="city1" value="cairo"><br>
+        <p>birthday: <br><input type="date" id='birthday' name='birthday1'> </p> 
+        <label for="age">age:</label><br>
+        <input type="text" id='age' name='age1' value="18" min="18" max="21"><br>
+        <label for="gender">gender:</label><br>
+        <input type="radio" id="male" name="gender1" value="male">
+        <label for="male">Male</label><br>
+        <input type="radio" id="female" name="gender1" value="female">
+        <label for="female">Female</label><br>
+
+        <label for="interests">choose your interests</label><br>
+        <label for="footblall">football</label>
+        <input type="checkbox" id="football" name="choose"  value="football"><br>
+        <label for="reading">reading</label>
+        <input type="checkbox" id="reading" name="choose"  value="reading"><br>
+        <label for="tennis">tennis</label>
+        <input type="checkbox" id="tennis" name="choose"  value="tennis"><br>
+         </fieldset>
+    
+    <fieldset>
+        <legend>college info of student </legend>
+      
+     <p>ID  <br><input type="text" id='ID' name="id1" min="20178000" max="20178060"  minlength="8" maxlength="30" ></p> 
+       
+       <p>Password: <br> <input type="password" id='pwd' name= "pw" minlength="8" maxlength="30" ></p>
+        <label for="depatment">What is your DEPT.:</label><br>
+        <select name="taskOption" id="depatment">
+            <option name="taskOption" value="Bio-informatics">Bio-informatics</option>
+            <option name="taskOption" value="CS">CS</option>
+            <option name="taskOption" value="IS">IS</option>
+            <option  name="taskOption" value="IT">IT</option>
+        </select><br>
+        <label for="programming skills">programming skills.:</label><br>
+        <input list="programming"  name="taskOption2">
+        <datalist name="taskOption2" id="programming">
+            <optgroup name="taskOption2" value=" programming skills"></optgroup>
+            <option  name="taskOption2" value=" C++"></option>
+            <option  name="taskOption2" value=" python"></option>
+            <option  name="taskOption2" value=" problem solving"></option>
+            <option  name="taskOption2" value="training"></option>
+        </datalist><br>
+
+
+
+        <input type="submit" name="Submit-button" value="Add to Database">
+        <input type="reset" value="reset to default">
+    </fieldset>
+
+</form>
+</body>
+</html>
